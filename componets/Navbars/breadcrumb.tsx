@@ -2,7 +2,12 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "@chakra-ui/react";
 
 const BreadcrumbComponent = () => {
   return (
-    <Breadcrumb fontWeight="medium" fontSize="sm" ml="0" mr="auto">
+    <Breadcrumb
+      fontWeight="medium"
+      fontSize={["sm", "md", "lg"]}
+      ml="0"
+      mr="auto"
+    >
       <BreadcrumbItem>
         <BreadcrumbLink href="#">Home</BreadcrumbLink>
       </BreadcrumbItem>
