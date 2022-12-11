@@ -1,35 +1,11 @@
-import {
-  Box,
-  Drawer,
-  DrawerBody,
-  DrawerContent,
-  DrawerHeader,
-  DrawerOverlay,
-  Flex,
-  Icon,
-  useDisclosure,
-  chakra,
-} from "@chakra-ui/react";
+import { Card, chakra, Box, Flex, Icon } from "@chakra-ui/react";
+import { DrawerItemDataSet, drawerItemDataSet } from "./variables/drawerItem";
 
-import { FiUser } from "react-icons/fi";
-import { DrawerItems } from "./drawerItems";
-type Props = {
-  isOpen: boolean;
-  onClose: () => void;
-};
-
-const DrawerComponent = (props: Props) => {
+export const DrawerItems = () => {
   return (
-    <Drawer
-      placement={"left"}
-      onClose={props.onClose}
-      isOpen={props.isOpen}
-      size={"md"}
-    >
-      <DrawerOverlay />
-      <DrawerContent>
-        <DrawerHeader borderBottomWidth="1px">Basic Drawer</DrawerHeader>
-        <DrawerBody>
+    <div>
+      {drawerItemDataSet.map((item: DrawerItemDataSet, i) => {
+        return (
           <Flex
             maxW="md"
             w="full"
@@ -40,7 +16,7 @@ const DrawerComponent = (props: Props) => {
           >
             <Flex justifyContent="center" alignItems="center" w={12}>
               <Icon
-                as={FiUser}
+                as={item.icon}
                 color="black"
                 boxSize={6}
                 _dark={{ color: "white" }}
@@ -55,7 +31,7 @@ const DrawerComponent = (props: Props) => {
                   }}
                   fontWeight="bold"
                 >
-                  Success
+                  {item.title}
                 </chakra.span>
                 <chakra.p
                   color="gray.600"
@@ -64,16 +40,13 @@ const DrawerComponent = (props: Props) => {
                   }}
                   fontSize="sm"
                 >
-                  Your account was registered!
+                  {item.description}
                 </chakra.p>
               </Box>
             </Box>
           </Flex>
-          <DrawerItems />
-        </DrawerBody>
-      </DrawerContent>
-    </Drawer>
+        );
+      })}
+    </div>
   );
 };
-
-export default DrawerComponent;
