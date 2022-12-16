@@ -5,8 +5,8 @@ import DrawerComponent from "./Drawer/drawer";
 const HeaderNavItems = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <HStack mr="sm" p={2} pb={4} spacing={10}>
-      <Avatar name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
+    <HStack p={{ base: "2px 0 2px 0", md: "2" }} pb={4} spacing={10}>
+      <Avatar size="sm" name="Dan Abrahmov" src="https://bit.ly/dan-abramov" />
       <Button colorScheme="gray" onClick={onOpen}>
         <HamburgerIcon />
       </Button>

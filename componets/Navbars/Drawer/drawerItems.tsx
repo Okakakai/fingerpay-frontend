@@ -31,13 +31,12 @@ export const DrawerItems = (props: Props) => {
             <Box mx={-3} py={2} px={4}>
               <Box mx={3}>
                 <Text
-                  color="black.500"
+                  color="#006bcb"
                   _dark={{
                     color: "white.400",
                   }}
-                  fontWeight="bold"
                   letterSpacing="0px"
-                  fontSize="lg"
+                  fontSize="6.3vw"
                   mb="-2"
                   p="0px"
                 >
@@ -46,7 +45,8 @@ export const DrawerItems = (props: Props) => {
                 <Text
                   mt="0"
                   p="0px"
-                  color="gray.600"
+                  color="#006bcb"
+                  opacity="0.6"
                   _dark={{
                     color: "gray.200",
                   }}
