@@ -1,47 +1,60 @@
-import { Card, chakra, Box, Flex, Icon } from "@chakra-ui/react";
-import { DrawerItemDataSet, drawerItemDataSet } from "./variables/drawerItem";
+import { Card, chakra, Box, Flex, Icon, Text } from "@chakra-ui/react";
+import { DrawerItemDataSet } from "./variables/drawerItem";
+import { FiChevronRight } from "react-icons/fi";
 
-export const DrawerItems = () => {
+interface Props {
+  drawerItemDataSet: DrawerItemDataSet[];
+}
+
+export const DrawerItems = (props: Props) => {
   return (
     <div>
-      {drawerItemDataSet.map((item: DrawerItemDataSet, i) => {
+      {props.drawerItemDataSet.map((item: DrawerItemDataSet, index) => {
         return (
           <Flex
-            maxW="md"
+            maxW="lx"
             w="full"
             mx="auto"
             my="1rem"
             rounded="lg"
             overflow="hidden"
+            key={index}
           >
             <Flex justifyContent="center" alignItems="center" w={12}>
               <Icon
                 as={item.icon}
                 color="black"
-                boxSize={6}
+                boxSize={8}
                 _dark={{ color: "white" }}
               />
             </Flex>
             <Box mx={-3} py={2} px={4}>
               <Box mx={3}>
-                <chakra.span
-                  color="green.500"
+                <Text
+                  color="black.500"
                   _dark={{
-                    color: "green.400",
+                    color: "white.400",
                   }}
                   fontWeight="bold"
+                  letterSpacing="0px"
+                  fontSize="lg"
+                  mb="-2"
+                  p="0px"
                 >
                   {item.title}
-                </chakra.span>
-                <chakra.p
+                </Text>
+                <Text
+                  mt="0"
+                  p="0px"
                   color="gray.600"
                   _dark={{
                     color: "gray.200",
                   }}
-                  fontSize="sm"
+                  fontSize="md"
                 >
-                  {item.description}
-                </chakra.p>
+                  {/* {item.description} */}
+                  "フレーズを入れる"
+                </Text>
               </Box>
             </Box>
           </Flex>
