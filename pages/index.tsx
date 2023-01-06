@@ -24,12 +24,9 @@ import {
   chakra,
   Link,
 } from "@chakra-ui/react";
-import { StarIcon } from "@chakra-ui/icons";
-import { useState } from "react";
 
 import Header from "../componets/Navbars/header";
 import CashCard from "../componets/Cards/cashcard";
-import Templates from "../componets/Cards/templates";
 
 const Home: NextPage = () => {
   return (
