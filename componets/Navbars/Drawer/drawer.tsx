@@ -10,6 +10,7 @@ import {
   useDisclosure,
   chakra,
 } from "@chakra-ui/react";
+import { drawerItemDataSet } from "./variables/drawerItem";
 
 import { FiUser } from "react-icons/fi";
 import { DrawerItems } from "./drawerItems";
@@ -24,13 +25,13 @@ const DrawerComponent = (props: Props) => {
       placement={"left"}
       onClose={props.onClose}
       isOpen={props.isOpen}
-      size={"md"}
+      size={{ base: "xs", md: "md" }}
     >
       <DrawerOverlay />
       <DrawerContent>
         <DrawerHeader borderBottomWidth="1px">Basic Drawer</DrawerHeader>
         <DrawerBody>
-          <Flex
+          {/* <Flex
             maxW="md"
             w="full"
             mx="auto"
@@ -68,8 +69,8 @@ const DrawerComponent = (props: Props) => {
                 </chakra.p>
               </Box>
             </Box>
-          </Flex>
-          <DrawerItems />
+          </Flex> */}
+          <DrawerItems drawerItemDataSet={drawerItemDataSet} />
         </DrawerBody>
       </DrawerContent>
     </Drawer>
