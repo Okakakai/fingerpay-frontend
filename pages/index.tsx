@@ -27,6 +27,7 @@ import {
 
 import Header from "../componets/Navbars/header";
 import CashCard from "../componets/Cards/cashcard";
+import News from "../componets/News/news";
 
 const Home: NextPage = () => {
   return (
@@ -40,7 +41,7 @@ const Home: NextPage = () => {
       <main>
         <VStack>
           <CashCard />
-          {/* <Templates /> */}
+          <News />
         </VStack>
       </main>
       <footer className={styles.footer}></footer>
