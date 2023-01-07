@@ -1,4 +1,12 @@
-import { Box, chakra, Flex } from "@chakra-ui/react";
+import {
+  Box,
+  chakra,
+  Flex,
+  Grid,
+  HStack,
+  Stack,
+  GridItem,
+} from "@chakra-ui/react";
 
 const CashCard = () => {
   return (
@@ -19,90 +27,29 @@ const CashCard = () => {
         w="sm"
         mx="auto"
       >
-        <Box
-          bg="gray.300"
-          h={64}
-          w="full"
-          rounded="lg"
-          shadow="md"
-          bgSize="cover"
-          bgPos="center"
-        ></Box>
-
-        <Box
-          w={{
-            base: 56,
-            md: 64,
-          }}
-          bg="white"
-          _dark={{
-            bg: "gray.800",
-          }}
-          mt={-10}
-          shadow="lg"
-          rounded="lg"
-          overflow="hidden"
-        >
-          <chakra.h3
-            py={2}
-            textAlign="center"
-            fontWeight="bold"
-            textTransform="uppercase"
-            color="gray.800"
-            _dark={{
-              color: "white",
-            }}
-            letterSpacing={1}
-          >
-            NAME
-          </chakra.h3>
-
-          <Flex
-            alignItems="center"
-            justifyContent="space-between"
-            py={2}
-            px={3}
-            bg="gray.200"
-            _dark={{
-              bg: "gray.700",
-            }}
-          >
-            {/* <chakra.span
-              fontWeight="bold"
-              color="gray.800"
-              _dark={{
-                color: "gray.200",
-              }}
-            >
-              $129
-            </chakra.span>
-            <chakra.button
-              bg="gray.800"
-              fontSize="xs"
-              fontWeight="bold"
-              color="white"
-              px={2}
-              py={1}
-              rounded="lg"
-              textTransform="uppercase"
-              _hover={{
-                bg: "gray.700",
-                _dark: {
-                  bg: "gray.600",
-                },
-              }}
-              _focus={{
-                bg: "gray.700",
-                _dark: {
-                  bg: "gray.600",
-                },
-                outline: "none",
-              }}
-            >
-              Add to cart
-            </chakra.button> */}
+        <Stack h="220px" w="356px">
+          {/* <Grid w="100%" h="100%" templateColumns="repeat(5, 1fr)">
+            <GridItem
+              w="100%"
+              bgGradient="linear(red.100 0%, yellow.500)"
+            ></GridItem>
+            <GridItem></GridItem>
+            <GridItem></GridItem>
+            <GridItem></GridItem>
+            <GridItem></GridItem>
+          </Grid> */}
+          <Flex h="220px" borderRadius="30px" overflow="hidden">
+            <Box w="100%" h="100%" bgGradient="linear(#5DD5E8, #B2FAFF)"></Box>
+            <Box w="100%" h="100%" bgGradient="linear(#5DD5E8, #B2FAFF)"></Box>
+            <Box w="100%" h="100%" bgGradient="linear(#5DD5E8, #B2FAFF)"></Box>
+            <Box w="100%" h="100%" bgGradient="linear(#2ECFE8, #B2FAFF)"></Box>
+            <Box
+              w="100%"
+              h="100%"
+              bgGradient="linear(#00C9E8, #2ecfe857)"
+            ></Box>
           </Flex>
-        </Box>
+        </Stack>
       </Flex>
     </Flex>
   );
