@@ -14,10 +14,12 @@ const MapPage = () => {
     []
   );
   return (
-    <div className={styles.container}>
-      <Header></Header>
-      <Map />
-    </div>
+    <>
+      <Header />
+      <div className={styles.container}>
+        <Map />
+      </div>
+    </>
   );
 };
 
