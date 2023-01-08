@@ -4,7 +4,7 @@ import HeaderNavItems from "./headerNavItems";
 
 const Header = () => {
   return (
-    <Flex justifyContent={"center"} alignItems="center" m="0 auto">
+    <Flex justifyContent={"center"} px="1rem" alignItems="center" bg="white">
       <BreadcrumbComponent />
       <HeaderNavItems />
     </Flex>
