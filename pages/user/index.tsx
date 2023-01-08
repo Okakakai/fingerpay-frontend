@@ -7,7 +7,9 @@ const UserPage = () => {
   return (
     <>
       <Header />
-      <div className={`${styles.container} ${styles.container_bg_gray}`}>
+      <div
+        className={`${styles.container} ${styles.container_bg_gray} ${styles.container_dengerous_height_assign}`}
+      >
         <VStack
           boxShadow="base"
           p="25px"
