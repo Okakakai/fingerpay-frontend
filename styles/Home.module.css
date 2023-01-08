@@ -4,8 +4,11 @@
 }
 
 .container_bg_gray {
-    padding: 2rem 1rem;
     background-color: #f6f6f6;
+}
+
+.container_padding_bg_gray {
+    padding: 2rem 1rem;
 }
 
 .container_dengerous_height_assign {
