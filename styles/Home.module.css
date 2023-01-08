@@ -1,7 +1,11 @@
 .container {
     padding: 0 1rem;
     width: 100%;
-    margin-top: 1rem;
+}
+
+.container_bg_gray {
+    padding: 2rem 1rem;
+    background-color: #f6f6f6;
 }
 
 @media screen and (min-width: 768px) {
