@@ -16,12 +16,7 @@ export const drawerItemDataSet: DrawerItemDataSet[] = [
   {
     title: "Home",
     icon: AiOutlineHome,
-    url: "#",
-  },
-  {
-    title: "hello",
-    icon: AiOutlineHome,
-    url: "hello",
+    url: "",
   },
   {
     title: "User",
@@ -34,7 +29,7 @@ export const drawerItemDataSet: DrawerItemDataSet[] = [
     url: "map",
   },
   {
-    title: "history",
+    title: "History",
     icon: AiOutlineMoneyCollect,
     url: "history",
   },
