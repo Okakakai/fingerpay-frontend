@@ -1,5 +1,5 @@
 import { Box, Flex, Icon, Text, VStack } from "@chakra-ui/react";
-import { FiRefreshCw } from "react-icons/fi";
+import { FiLogIn, FiUser, FiCreditCard, FiHelpCircle, FiMessageSquare, FiSettings, FiFileText, FiChevronRight } from "react-icons/fi";
 import Header from "../../componets/Navbars/header";
 import styles from "../../styles/Home.module.css";
 
@@ -18,19 +18,19 @@ const UserPage = () => {
           borderRadius="6px"
         >
           <Flex width="100%" pb="20px" borderBottom="dotted 2px #cecccd">
-            <Icon as={FiRefreshCw} color="black" boxSize={7} mr="3rem" />
+            <Icon as={FiLogIn} color="black" boxSize={7} mr="3rem" />
             <Text>ログイン情報</Text>
-            <Icon ml="auto" as={FiRefreshCw} color="black" boxSize={7} />
+            <Icon ml="auto" as={FiChevronRight} color="black" boxSize={6} />
           </Flex>
           <Flex width="100%" pb="20px" borderBottom="dotted 2px #cecccd">
-            <Icon as={FiRefreshCw} color="black" boxSize={7} mr="3rem" />
+            <Icon as={FiUser} color="black" boxSize={7} mr="3rem" />
             <Text>お客様情報</Text>
-            <Icon ml="auto" as={FiRefreshCw} color="black" boxSize={7} />
+            <Icon ml="auto" as={FiChevronRight} color="black" boxSize={6} />
           </Flex>
           <Flex width="100%">
-            <Icon as={FiRefreshCw} color="black" boxSize={7} mr="3rem" />
+            <Icon as={FiCreditCard} color="black" boxSize={7} mr="3rem" />
             <Text>お支払い情報</Text>
-            <Icon ml="auto" as={FiRefreshCw} color="black" boxSize={7} />
+            <Icon ml="auto" as={FiChevronRight} color="black" boxSize={6} />
           </Flex>
         </VStack>
         <VStack
@@ -42,14 +42,14 @@ const UserPage = () => {
           borderRadius="6px"
         >
           <Flex width="100%" pb="20px" borderBottom="dotted 2px #cecccd">
-            <Icon as={FiRefreshCw} color="black" boxSize={7} mr="3rem" />
+            <Icon as={FiHelpCircle} color="black" boxSize={7} mr="3rem" />
             <Text>よくあるご質問</Text>
-            <Icon ml="auto" as={FiRefreshCw} color="black" boxSize={7} />
+            <Icon ml="auto" as={FiChevronRight} color="black" boxSize={6} />
           </Flex>
           <Flex width="100%">
-            <Icon as={FiRefreshCw} color="black" boxSize={7} mr="3rem" />
+            <Icon as={FiMessageSquare} color="black" boxSize={7} mr="3rem" />
             <Text>お問い合わせ</Text>
-            <Icon ml="auto" as={FiRefreshCw} color="black" boxSize={7} />
+            <Icon ml="auto" as={FiChevronRight} color="black" boxSize={6} />
           </Flex>
         </VStack>
         <VStack
@@ -61,9 +61,9 @@ const UserPage = () => {
           borderRadius="6px"
         >
           <Flex width="100%">
-            <Icon as={FiRefreshCw} color="black" boxSize={7} mr="3rem" />
+            <Icon as={FiSettings} color="black" boxSize={7} mr="3rem" />
             <Text>設定</Text>
-            <Icon ml="auto" as={FiRefreshCw} color="black" boxSize={7} />
+            <Icon ml="auto" as={FiChevronRight} color="black" boxSize={6} />
           </Flex>
         </VStack>
         <VStack
@@ -75,9 +75,9 @@ const UserPage = () => {
           borderRadius="6px"
         >
           <Flex width="100%">
-            <Icon as={FiRefreshCw} color="black" boxSize={7} mr="3rem" />
+            <Icon as={FiFileText} color="black" boxSize={7} mr="3rem" />
             <Text>利用規約・同意書一覧</Text>
-            <Icon ml="auto" as={FiRefreshCw} color="black" boxSize={7} />
+            <Icon ml="auto" as={FiChevronRight} color="black" boxSize={6} />
           </Flex>
         </VStack>
       </div>
