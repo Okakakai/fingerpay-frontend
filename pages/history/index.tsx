@@ -6,15 +6,15 @@ import styles from "../../styles/Home.module.css";
 import { Data } from "../api/hello";
 
 const HistoryPage = () => {
-  const [history, setHistory] = useState<Data>({ name: "unknown" });
-  useEffect(() => {
-    const fetchHitory = async () => {
-      const response = await fetch("/api/hello");
-      const data = await response.json();
-      setHistory(data.history);
-    };
-    fetchHitory();
-  });
+  // const [history, setHistory] = useState<Data>({ name: "unknown" });
+  // useEffect(() => {
+  //   const fetchHitory = async () => {
+  //     const response = await fetch("/api/hello");
+  //     const data = await response.json();
+  //     setHistory(data.history);
+  //   };
+  //   fetchHitory();
+  // });
   return (
     <>
       <Header />
@@ -28,7 +28,8 @@ const HistoryPage = () => {
           bg="white"
           borderRadius="6px"
         >
-          <div>{history.name}</div>
+          {/* <div>{history.name}</div> */}
+          <div>実装予定</div>
         </VStack>
       </div>
     </>
