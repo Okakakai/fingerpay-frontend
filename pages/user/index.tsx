@@ -1,5 +1,14 @@
 import { Box, Flex, Icon, Text, VStack } from "@chakra-ui/react";
-import { FiLogIn, FiUser, FiCreditCard, FiHelpCircle, FiMessageSquare, FiSettings, FiFileText, FiChevronRight } from "react-icons/fi";
+import {
+  FiLogIn,
+  FiUser,
+  FiCreditCard,
+  FiHelpCircle,
+  FiMessageSquare,
+  FiSettings,
+  FiFileText,
+  FiChevronRight,
+} from "react-icons/fi";
 import Header from "../../componets/Navbars/header";
 import styles from "../../styles/Home.module.css";
 
@@ -22,7 +31,12 @@ const UserPage = () => {
             <Text>ログイン情報</Text>
             <Icon ml="auto" as={FiChevronRight} color="black" boxSize={6} />
           </Flex>
-          <Flex width="100%" pb="20px" borderBottom="dotted 2px #cecccd" opacity={"0.6"}>
+          <Flex
+            width="100%"
+            pb="20px"
+            borderBottom="dotted 2px #cecccd"
+            opacity={"0.6"}
+          >
             <Icon as={FiUser} color="black" boxSize={7} mr="3rem" />
             <Text>お客様情報</Text>
             <Icon ml="auto" as={FiChevronRight} color="black" boxSize={6} />
@@ -41,7 +55,12 @@ const UserPage = () => {
           bg="white"
           borderRadius="6px"
         >
-          <Flex width="100%" pb="20px" borderBottom="dotted 2px #cecccd" opacity={"0.6"}>
+          <Flex
+            width="100%"
+            pb="20px"
+            borderBottom="dotted 2px #cecccd"
+            opacity={"0.6"}
+          >
             <Icon as={FiHelpCircle} color="black" boxSize={7} mr="3rem" />
             <Text>よくあるご質問</Text>
             <Icon ml="auto" as={FiChevronRight} color="black" boxSize={6} />
