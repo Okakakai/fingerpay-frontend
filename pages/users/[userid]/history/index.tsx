@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import { Box, Flex, Icon, Text, VStack } from "@chakra-ui/react";
-import Header from "../../componets/Navbars/header";
-import styles from "../../styles/Home.module.css";
+import { VStack } from "@chakra-ui/react";
+import Header from "../../../../componets/Navbars/header";
+import styles from "../../../../styles/helpful.module.css";
 
-import { Data } from "../api/hello";
+import { Data } from "../../../api/hello";
 
 const HistoryPage = () => {
   // const [history, setHistory] = useState<Data>({ name: "unknown" });

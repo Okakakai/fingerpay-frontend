@@ -9,8 +9,8 @@ import {
   FiFileText,
   FiChevronRight,
 } from "react-icons/fi";
-import Header from "../../componets/Navbars/header";
-import styles from "../../styles/Home.module.css";
+import Header from "../../../../componets/Navbars/header";
+import styles from "../../../../styles/helpful.module.css";
 
 const UserPage = () => {
   return (

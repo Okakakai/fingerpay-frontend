@@ -1,26 +1,3 @@
-.container {
-    padding: 0 1rem;
-    width: 100%;
-}
-
-.container_bg_gray {
-    background-color: #f6f6f6;
-}
-
-.container_padding_bg_gray {
-    padding: 2rem 1rem;
-}
-
-.container_dengerous_height_assign {
-    height: 100vh;
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        padding: 0 2rem;
-    }
-}
-
 .footer {
     display: flex;
     flex: 1;

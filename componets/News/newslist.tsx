@@ -19,7 +19,7 @@ export const NewsList = (props: Props) => {
     <Box px="1rem">
       {props.newsListDataSet.map((item: NewsListDataSet, index) => {
         return (
-          <Box borderBottom="1px" borderColor="#006bcb">
+          <Box borderBottom="1px" borderColor="#006bcb" key={index}>
             <Link href={`${item.url}`}>
               <Box mx={-3} py={2} px={4}>
                 <Box mx={3}>
