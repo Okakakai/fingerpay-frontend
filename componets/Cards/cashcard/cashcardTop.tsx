@@ -2,6 +2,7 @@ import { Flex, Icon, Image, Text } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 import { FiRefreshCcw } from "react-icons/fi";
 import { GrRefresh } from "react-icons/gr";
+import { faker } from "@faker-js/faker";
 
 export const CashcardTop = () => {
   return (
@@ -26,7 +27,7 @@ export const CashcardTop = () => {
         <CardTitle>FINGER PAY</CardTitle>
       </Flex>
       <Text mt="2rem" fontSize="16px">
-        1234 1234 1234 1234
+        {faker.finance.creditCardNumber("63[7-9]#-####-####-###L")}
       </Text>
     </Flex>
   );

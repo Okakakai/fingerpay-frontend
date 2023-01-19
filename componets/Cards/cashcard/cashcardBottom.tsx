@@ -1,6 +1,9 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
+import { faker } from "@faker-js/faker";
+import { useMemo } from "react";
 
 export const CashcardBottom = () => {
+  const price = useMemo(() => faker.commerce.price(), []);
   return (
     <Flex
       zIndex="2"
@@ -21,7 +24,7 @@ export const CashcardBottom = () => {
         </Text>
         <Flex alignItems="flex-end">
           <Text mt="-5px" fontSize="18px">
-            1,320
+            {price}
           </Text>
           <Text fontSize="11px" ml="2px" pb="2px">
             円

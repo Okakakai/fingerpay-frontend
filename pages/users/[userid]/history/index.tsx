@@ -1,36 +1,18 @@
 import { useState, useEffect } from "react";
+import axios from "axios";
 import { VStack } from "@chakra-ui/react";
 import Header from "../../../../componets/Navbars/header";
 import styles from "../../../../styles/helpful.module.css";
-
-import { Data } from "../../../api/hello";
+import { HistoryList } from "../../../../componets/Cards/history/historylist";
 
 const HistoryPage = () => {
-  // const [history, setHistory] = useState<Data>({ name: "unknown" });
-  // useEffect(() => {
-  //   const fetchHitory = async () => {
-  //     const response = await fetch("/api/hello");
-  //     const data = await response.json();
-  //     setHistory(data.history);
-  //   };
-  //   fetchHitory();
-  // });
   return (
     <>
       <Header />
       <div
         className={`${styles.container_padding_bg_gray} ${styles.container_bg_gray} ${styles.container_dengerous_height_assign}`}
       >
-        <VStack
-          boxShadow="md"
-          p="25px"
-          gap="1rem"
-          bg="white"
-          borderRadius="6px"
-        >
-          {/* <div>{history.name}</div> */}
-          <div>実装予定</div>
-        </VStack>
+        <HistoryList />
       </div>
     </>
   );
