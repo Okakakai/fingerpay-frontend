@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   const handleLogin = (): void => {
     login().catch((error) => {
       console.error(error);
-      return;
+      return <div>予期せぬerrorを検知しました。私の技術不足です</div>;
     });
   };
 
