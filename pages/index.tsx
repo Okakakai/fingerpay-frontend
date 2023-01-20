@@ -24,7 +24,7 @@ const Home: NextPage = () => {
       const userUID = user.uid;
       router.push(`/users/${userUID}/`);
     }
-  }, []);
+  }, [user]);
 
   return (
     <div className={styles.introduction_bg}>
