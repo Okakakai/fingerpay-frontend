@@ -1,4 +1,4 @@
-import { Image } from "@chakra-ui/react";
+import Image from "next/image";
 import {
   Drawer,
   DrawerBody,
@@ -25,8 +25,17 @@ const DrawerComponent = (props: Props) => {
     >
       <DrawerOverlay />
       <DrawerContent>
-        <DrawerHeader borderBottomWidth="1px" backgroundColor={"#FFFFFF"} px="1rem">
-          <Image src='/FINGERPAY_LOGO_TRANSPARENT.png' alt='FingerPay LOGO' maxWidth={"170px"} ></Image>
+        <DrawerHeader
+          borderBottomWidth="1px"
+          backgroundColor={"#FFFFFF"}
+          px="1rem"
+        >
+          <Image
+            src="/FINGERPAY_LOGO_TRANSPARENT.png"
+            alt="FingerPay LOGO"
+            width={"170px"}
+            height="49.3px"
+          ></Image>
         </DrawerHeader>
         <DrawerBody px={2}>
           <DrawerItems drawerItemDataSet={drawerItemDataSet} />

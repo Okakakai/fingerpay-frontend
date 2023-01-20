@@ -1,9 +1,10 @@
 import type { NextPage } from "next";
+import Image from "next/image";
 import Head from "next/head";
 
 import styles from "../styles/introduction.module.css";
 import { useUser, login, logout } from "../lib/auth";
-import { Image, Text, VStack, HStack, Button } from "@chakra-ui/react";
+import { Box, VStack, HStack, Button } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
@@ -35,11 +36,12 @@ const Home: NextPage = () => {
           <></>
         ) : (
           <VStack>
+            <Box mb="30vh" />
             <Image
               src="/FINGERPAY_LOGO_TRANSPARENT.png"
               alt="finger pay logo"
-              maxW="300px"
-              mt="30vh"
+              height="80px"
+              width="300px"
             />
             <HStack gap="2rem">
               <Button onClick={handleLogin}>新規 ユーザー の方</Button>
