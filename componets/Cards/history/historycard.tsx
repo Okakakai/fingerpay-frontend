@@ -1,6 +1,5 @@
 import { VStack, HStack, Icon, Flex, Text } from "@chakra-ui/react";
 import { HistoryDataSet } from "./variables/historydata";
-import { useFaker } from "next-faker";
 import { faker } from "@faker-js/faker";
 import { useMemo } from "react";
 
