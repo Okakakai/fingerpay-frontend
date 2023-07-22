@@ -15,3 +15,6 @@
 * emotion
 * react-icon
 
+---
+
+<img width="330" alt="image" src="https://github.com/Okakakai/fingerpay-frontend/assets/50835649/5ab001c9-4873-4475-9652-ae36f89932ea">
